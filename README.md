@@ -1,16 +1,23 @@
-# Forja
-#### Asignatura: *Ingeniería Web: Visión General*
-#### [Máster en Ingeniería Web por la U.P.M.](http://miw.etsisi.upm.es)
+# Ejercicio colaborativo entre alumnos
+El objetivo es instruir al alumno en el desarrollo de software colaborativo.
 
-### Tecnologías necesarias
-* Java
-* Maven
-* IntelliJ
-* GitHub
+Cada alumno deberá realizar dos roles: `Arquitecto de software` y `Programador`.
 
-### Descripción
-Este proyecto pretende ser una plantilla maven para crear un proyecto
-1.- Descomprimir en la carpeta de trabajo
-1.- Editar el pom.xml y cambiarle el nombre del proyecto
-1.- Desde IntelliJ, `Import Project`, marcar `Create Project from external model` y elegir `Maven`
+Sólo existe una norma básica: esta `prohibido hablar entre los integrantes`, sólo se podrán comunicar vía tickets.
+
+## Arquitecto de software
+Se parte de un software ya desarrollado,
+y su función será coordinar y supervisar la modificación del mismo a traves de tickets y la wiki.
+Para ello, tendrá la colaboración de tres `Programadores`.
+
+- Roberto Martín
+
+## Programador
+Su función será realizar una query con sus tickets e intentar seguirlos *fielmente* y con la *rapidez* necesaria...
+
+- Alberto Garcia
+- Alex Puebla
+- Sandra Ortega
+
+y sin mala intención **;-)**.
 
