@@ -10,9 +10,6 @@ notifications:
     recipients:
     - roberto.martin.escribano@alumnos.upm.es
 script:
-#Test unitario y de integracion en develop
 - mvn verify
-#Lanza test para ver Cobertura desde SONAR
 - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
-#Conectar con SONAR para resultados
 - mvn sonar:sonar -Dsonar.organization=robertome-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR
