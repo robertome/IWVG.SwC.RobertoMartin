@@ -53,4 +53,11 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean isGreaterThan(Fraction fraction){
+        return this.decimal() > fraction.decimal();
+    }
+
+    public boolean isLowerThan(Fraction fraction){
+        return this.decimal() < fraction.decimal();
+    }
 }
