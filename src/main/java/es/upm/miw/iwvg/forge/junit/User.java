@@ -7,8 +7,13 @@ public class User {
     private String name;
 
     private String familyName;
-
     public User(int number, String name, String familyName) {
+        if (name == null || name == "") {
+            throw new IllegalArgumentException("Field 'name' MUST NOT be null or empty");
+        }
+        if (familyName == null || familyName == "") {
+            throw new IllegalArgumentException("Field 'familyName' MUST NOT be null or empty");
+        }
         this.number = number;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
