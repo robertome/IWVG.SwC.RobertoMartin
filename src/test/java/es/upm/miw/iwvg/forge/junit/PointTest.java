@@ -50,4 +50,18 @@ class PointTest {
         assertEquals(2, point.getY());
     }
 
+    @Test
+    void testModifyX(){
+        point = new Point(1,2);
+        this.point.setX(2);
+        assertEquals(2, this.point.getX());
+    }
+
+    @Test
+    void testModifyY(){
+        point = new Point(1,2);
+        this.point.setY(3);
+        assertEquals(3, this.point.getY());
+    }
+
 }
