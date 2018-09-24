@@ -66,4 +66,16 @@ public class FractionTest {
         assertTrue(improper.isImproper());
     }
 
+    @Test
+    void testIsEquivalente(){
+        fraction = new Fraction(1,2);
+        assertTrue(fraction.isEquivalent(new Fraction(2,4)));
+    }
+
+    @Test
+    void testIsEquivalenteFalse(){
+        fraction = new Fraction(1,2);
+        assertEquals(false,fraction.isEquivalent(new Fraction(3,4)));
+    }
+
 }
