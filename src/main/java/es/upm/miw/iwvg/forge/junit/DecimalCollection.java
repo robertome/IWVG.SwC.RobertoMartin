@@ -50,4 +50,12 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double average() {
+        double average = 0.0;
+        if(this.size() != 0) {
+            average = this.sum() / (double) this.size();
+        }
+        return average;
+    }
+
 }
