@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FractionTest {
     private Fraction fraction;
@@ -52,6 +53,17 @@ public class FractionTest {
     @Test
     void testIsLowerThanFalse() {
         assertEquals(false, fraction.isLowerThan(fractionToCompare));
+    }
+
+    @Test
+    void testIsProper() {
+        assertTrue(fractionToCompare.isProper());
+    }
+
+    @Test
+    void testIsImproper() {
+        Fraction improper = new Fraction(2,2);
+        assertTrue(improper.isImproper());
     }
 
 }
