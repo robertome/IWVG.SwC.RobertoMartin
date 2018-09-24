@@ -68,4 +68,8 @@ public class Fraction {
     public boolean isImproper() {
         return this.denominator >= this.numerator;
     }
+
+    public boolean isEquivalent(Fraction equivalentFraction){
+        return (numerator * equivalentFraction.getDenominator() == denominator * equivalentFraction.getNumerator());
+    }
 }
