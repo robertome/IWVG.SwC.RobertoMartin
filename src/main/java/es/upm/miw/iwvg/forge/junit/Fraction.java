@@ -60,4 +60,12 @@ public class Fraction {
     public boolean isLowerThan(Fraction fraction){
         return this.decimal() < fraction.decimal();
     }
+
+    public boolean isProper() {
+        return this.numerator < this.denominator;
+    }
+
+    public boolean isImproper() {
+        return this.denominator >= this.numerator;
+    }
 }
